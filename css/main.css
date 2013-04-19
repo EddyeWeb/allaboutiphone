@@ -1,0 +1,445 @@
+/*
+This CSS is written by Peter Botta
+*/
+
+/*
+	font: 100% normal 'League Gothic', Arial, Helvetica, sans-serif;
+	colors: #c75b5b > RED
+			#f6f5f7 > SILVER
+*/
+
+/* Personal Reset */
+
+body {
+	margin: 0;
+	padding: 0;
+	font: 100% normal Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+	a:hover {
+		color: #c75b5b;
+	}
+	
+ul {
+	margin: 0;
+	padding: 0;
+}
+	
+li {
+	list-style: none;
+}
+
+iframe {
+	margin: 0;
+	padding: 0;
+}
+
+
+/* Personal style */
+
+body {
+	background-image: url(../images/stone.JPG);
+	background-attachment: fixed;
+}
+
+header {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 580px;
+	background-color: #f6f5f7;
+}
+
+#mainNav {
+	margin: 0 auto;
+	width: 80%;
+}
+
+#mainNav ul {
+	margin: 0 auto;
+	text-align: center;
+	padding: 10px 0;
+}
+
+#mainNav ul li {
+	display: inline;
+	margin: 0 3%;
+}
+
+#mainNav ul li a {
+	text-transform: uppercase;
+	font-family: 'league_gothicregular', Arial, Helvetica, sans-serif;
+	font-size: 3em;
+	color: #333;
+	-webkit-transition: all 0.3s ease-in;
+	   -moz-transition: all 0.3s ease-in;
+		-ms-transition: all 0.3s ease-in;
+		 -o-transition: all 0.3s ease-in;
+			transition: all 0.3s ease-in;
+}
+
+	#mainNav ul li a:hover {
+		color: #c75b5b;
+		-webkit-transition: all 0.3s ease-out;
+		   -moz-transition: all 0.3s ease-out;
+			-ms-transition: all 0.3s ease-out;
+			 -o-transition: all 0.3s ease-out;
+				transition: all 0.3s ease-out;
+	}
+	
+	#mainNav .active {
+		color: #c75b5b;
+	}
+	
+#video_background {
+	position: absolute; 
+	top: 80px;
+	bottom: 0;
+	right: 0;
+	min-width: 100%;
+	width: 100%;
+	height: 300px;
+	min-height: 500px;
+	overflow: hidden; 
+}
+
+section {
+	margin: 0 auto;
+	width: 80%;
+	min-height: 500px;
+	padding: 40px 0 0 0;
+}
+
+article {
+
+}
+
+article p {
+	font-family: 'museo_slab300', Arial, Helvetica, sans-serif;
+	font-size: 1.4em;
+	color: #333;
+	text-align: justify;
+	text-shadow: #fff 1px 1px 0;
+}
+
+.multi-h2 {
+	text-align: center;
+	cursor: pointer;
+	font-family: 'league_gothicregular', Arial, Helvetica, sans-serif;
+	font-size: 6em;
+	text-transform: uppercase;
+	font-weight: normal;
+	color: #c75b5b;
+	text-shadow:#f0f0f0 2px 2px 0,
+				#888888 5px 5px 0;
+	-webkit-transition: all 0.2s ease-in;
+	   -moz-transition: all 0.2s ease-in;
+		-ms-transition: all 0.2s ease-in;
+		 -o-transition: all 0.2s ease-in;
+			transition: all 0.2s ease-in;
+}
+	.multi-h2:hover {
+		color: #333;
+		text-shadow:#f0f0f0 2px 2px 0,
+					#c75b5b 5px 5px 0;
+		-webkit-transition: all 0.2s ease-out;
+		   -moz-transition: all 0.2s ease-out;
+			-ms-transition: all 0.2s ease-out;
+			 -o-transition: all 0.2s ease-out;
+				transition: all 0.2s ease-out;					
+	}
+
+/* GALLERY */
+
+#gallery {
+}
+
+#gallery header {
+	min-height: 80px;
+}
+
+#gallery section, #gallery article {
+	width: 80%;
+	margin: 0 auto;
+}
+
+#galleryNav {
+	text-align: center;
+}
+
+#galleryNav ul {
+}
+
+#galleryNav ul li {
+	margin: 0;
+	width: 30%;
+	display: inline-block;
+}
+
+#galleryNav ul li a {
+}
+
+#galleryNav ul li a img {
+    max-width:100%;
+	cursor: pointer;
+	margin: 10px;
+	opacity: 0.5;
+	-webkit-transition: all 0.2s ease-in;
+	   -moz-transition: all 0.2s ease-in;
+		-ms-transition: all 0.2s ease-in;
+		 -o-transition: all 0.2s ease-in;
+			transition: all 0.2s ease-in;	
+}
+	#galleryNav ul li a img:hover {
+		opacity: 1;
+		-webkit-transform: scale(1.2) rotate(360deg);
+		   -moz-transform: scale(1.2) rotate(360deg);
+			-ms-transform: scale(1.2) rotate(360deg);
+			 -o-transform: scale(1.2) rotate(360deg);
+				transform: scale(1.2) rotate(360deg);
+		-webkit-transition: all 0.2s ease-out;
+		   -moz-transition: all 0.2s ease-out;
+			-ms-transition: all 0.2s ease-out;
+			 -o-transition: all 0.2s ease-out;
+				transition: all 0.2s ease-out;
+	}
+	
+#closeGalery {
+	position: absolute;
+	left: 5px;
+	font-weight: bold;
+	font-size: 2em;
+}
+	
+#bigPic {
+	display: none;
+	position: absolute;
+	top: 10%;
+	z-index: 2;
+}
+
+#bigPic img {
+	max-width: 80%;
+}
+
+#bigPic a {
+	cursor: pointer;
+}
+
+#black {
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.75);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+#ios6 {
+	width: 200px;
+	margin: 0 auto;
+}
+
+#ios6 h3 {
+	text-align: center;
+	font-size: 3em;
+	color: #b0b0b0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	text-shadow: #fff 1px 1px 0;
+}
+
+#hardwarePic {
+	width: 200px;
+	margin: 0 auto;
+}
+#hardwarePic-2 {
+	width: 400px;
+	margin: 0 auto;
+}
+
+#photoPeter {
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+}
+#photoPeter img {
+	max-width: 100%;
+	height: auto;
+}
+
+#social {
+	text-align: center;
+	margin: 120px 0 140px 0;
+}
+
+#social a {
+	margin: 0 5%;
+}
+
+	#facebook {
+		background-image: url(../images/facebook.PNG);
+		background-size: 100%;
+		padding: 73px 50px;
+		color: transparent;
+		-webkit-border-radius: 999px;
+		border-radius: 999px;
+		opacity: 0.5;
+		-webkit-transition: all 0.2s ease-out;
+		   -moz-transition: all 0.2s ease-out;
+			-ms-transition: all 0.2s ease-out;
+			 -o-transition: all 0.2s ease-out;
+				transition: all 0.2s ease-out;
+	}
+		#facebook:hover {
+			opacity: 1;
+			-webkit-transition: all 0.2s ease-out;
+			   -moz-transition: all 0.2s ease-out;
+				-ms-transition: all 0.2s ease-out;
+				 -o-transition: all 0.2s ease-out;
+					transition: all 0.2s ease-out;					
+		}
+	
+	#twitter {
+		background-image: url(../images/twitter.png);
+		background-size: 100%;
+		padding: 73px 60px;
+		color: transparent;
+		-webkit-border-radius: 999px;
+		border-radius: 999px;
+		opacity: 0.5;
+		-webkit-transition: all 0.2s ease-out;
+		   -moz-transition: all 0.2s ease-out;
+			-ms-transition: all 0.2s ease-out;
+			 -o-transition: all 0.2s ease-out;
+				transition: all 0.2s ease-out;
+	}
+		#twitter:hover {
+			opacity: 1;
+			-webkit-transition: all 0.2s ease-out;
+			   -moz-transition: all 0.2s ease-out;
+				-ms-transition: all 0.2s ease-out;
+				 -o-transition: all 0.2s ease-out;
+					transition: all 0.2s ease-out;
+		}
+
+	#blogger {
+		background-image: url(../images/blogger.jpg);
+		background-size: 100%;
+		padding: 73px 55px;
+		color: transparent;
+		-webkit-border-radius: 999px;
+		border-radius: 999px;
+		opacity: 0.5;
+		-webkit-transition: all 0.2s ease-out;
+		   -moz-transition: all 0.2s ease-out;
+			-ms-transition: all 0.2s ease-out;
+			 -o-transition: all 0.2s ease-out;
+				transition: all 0.2s ease-out;
+	}
+		#blogger:hover {
+			opacity: 1;
+			-webkit-transition: all 0.2s ease-out;
+			   -moz-transition: all 0.2s ease-out;
+				-ms-transition: all 0.2s ease-out;
+				 -o-transition: all 0.2s ease-out;
+					transition: all 0.2s ease-out;			
+		}
+		
+#contactme {
+	margin: 60px 0 0 0;
+}
+
+#contactme p {
+	text-align: center;
+}
+
+#googleMap {
+	height: 500px;
+	width: 100%;
+}
+
+footer {
+	margin: 80px auto 0;
+	width: 100%;
+	background-color: #c75b5b;
+}
+
+#footer-inner {
+	width: 80%;
+	height: 60px;
+	line-height: 60px;
+	margin: 0 auto;
+	color: #f8f8f8;
+}
+	#footer-inner a {
+		text-transform: uppercase;
+		margin: 0 20px;
+		float: right;
+		color: #e7e7e7;
+		-webkit-transition: all 0.3s ease-in;
+		   -moz-transition: all 0.3s ease-in;
+			-ms-transition: all 0.3s ease-in;
+			 -o-transition: all 0.3s ease-in;
+				transition: all 0.3s ease-in;
+	}
+	#footer-inner a:hover {
+		color: #fff;
+		-webkit-transition: all 0.3s ease-in;
+		   -moz-transition: all 0.3s ease-in;
+			-ms-transition: all 0.3s ease-in;
+			 -o-transition: all 0.3s ease-in;
+				transition: all 0.3s ease-in;
+	}
+	.linkMe {
+		margin-right: 0 !important;
+	}
+
+/***** Scrollup *****/
+
+.scrollup {
+    width: 40px;
+    height: 40px;
+    opacity: 0.3;
+    position: fixed;
+    bottom: 80px;
+    right: 60px;
+    display: none;
+    text-indent: -9999px;
+    background: url('../images/icon_top.png') no-repeat;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		 -o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+}
+
+.scrollup:hover {
+	opacity: 0.8;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+		-ms-transition: all 0.3s ease;
+		 -o-transition: all 0.3s ease;
+			transition: all 0.3s ease;
+}
+
+/***** Scrollup *****/
+	
+/* Media Queries */
+
+@media screen and (max-width: 1060px) {
+	#mainNav ul li a {
+		font-size: 2em;
+		line-height: 60px;
+	}
+}
